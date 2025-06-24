@@ -11,6 +11,8 @@ async function fetchLastId() {
       `https://serverforfetching.onrender.com/beer/${id}`
     );
     console.log(responce);
+    const html = await responce.text();
+    console.log(html);
   } catch (error) {
     console.log(error);
   }
