@@ -7,7 +7,9 @@ let countOut = document.querySelector(".tryCount");
 
 async function fetchLastId() {
   try {
-    const responce = await fetch(`https://untappd.com/beer/${id}`);
+    const responce = await fetch(
+      `https://serverforfetching.onrender.com/beer/${id}`
+    );
     console.log(responce);
   } catch (error) {
     console.log(error);
