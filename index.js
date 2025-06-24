@@ -6,6 +6,11 @@ let errorOut = document.querySelector(".error");
 let countOut = document.querySelector(".tryCount");
 let strartId = document.querySelector(".strartId");
 
+strartId.addEventListener("input", () => {
+  id = Number(strartId.value);
+  console.log("start id", id);
+});
+
 async function fetchLastId() {
   try {
     const responce = await fetch(
