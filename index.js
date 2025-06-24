@@ -4,10 +4,10 @@ let button = document.querySelector(".startButton");
 let ok = document.querySelector(".ok");
 let errorOut = document.querySelector(".error");
 let countOut = document.querySelector(".tryCount");
-let strartId = document.querySelector(".strartId");
+let startId = document.querySelector(".startId");
 
-strartId.addEventListener("input", () => {
-  id = Number(strartId.value);
+startId.addEventListener("input", () => {
+  id = Number(startId.value);
   console.log("start id", id);
 });
 
